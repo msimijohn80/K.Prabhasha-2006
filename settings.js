@@ -35,14 +35,14 @@ global.sessionName = 'session'
 global.prefa = ['','!','.','😂','❤','💠']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
+    success: 'Done ✅',
+    admin: 'Only Admins can use it!😉',
+    botAdmin: 'Bot wants to be an Admin😥',
+    owner: 'Only Owner can use this!😉',
     group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'Wait A minute...',
+    private: 'This Features Only For Private Chat!',
+    bot: 'This Feature Is Only For Bot😝',
+    wait: '👉👈Pleas Wait...',
     error: 'Error! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
