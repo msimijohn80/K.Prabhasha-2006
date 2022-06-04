@@ -19,9 +19,9 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['94776115376'] //DO NOT CHANGE!
-global.premium = ['94776115376'] //DO NOT CHANGE!
-global.ownernomer = '94776115376' //DO NOT CHANGE!
+global.owner = ['380944814219'] //DO NOT CHANGE!
+global.premium = ['380944814219'] //DO NOT CHANGE!
+global.ownernomer = '380944814219' //DO NOT CHANGE!
 global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //DO NOT CHANGE!
 global.botname = ' ✮𝐐𝐔𝐄𝐄𝐍--𝐄𝐋𝐒𝐀✮' //YOU CAN CHANGE<<<
 global.footer = '©_Kumuthu.'
