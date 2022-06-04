@@ -1490,23 +1490,23 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
             await sleep(1000)
             upvote = vote[m.chat][1]
             devote = vote[m.chat][2]
-            teks_vote = `*「 VOTE 」*
+            teks_vote = `*❮❮ VOTE ❯❯*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+╔❮✮ UPVOTE ✮❯
 │ 
-┃╠ Total: ${vote[m.chat][1].length}
+╠ Total: ${vote[m.chat][1].length}
 │
 │ 
-└────
+╚════
 
-┌〔 DEVOTE 〕
+╔❮✮ DEVOTE ✮❯
 │ 
-┃╠ Total: ${vote[m.chat][2].length}
+╠ Total: ${vote[m.chat][2].length}
 │
 │ 
-└────
+╚════
 
 *${prefix}delvote* - To Delete Vote Session`
 let buttonsVote = [
@@ -1531,23 +1531,23 @@ let buttonsVote = [
             if (wasVote) replay(`You've Voted`)
             vote[m.chat][1].push(m.sender)
             menvote = vote[m.chat][1].concat(vote[m.chat][2])
-            teks_vote = `*「 VOTE 」*
+            teks_vote = `*❮❮ VOTE ❯❯*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+╔❮✮ UPVOTE ✮❯
 │ 
-┃╠ Total: ${vote[m.chat][1].length}
-${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╠ Total: ${vote[m.chat][1].length}
+${vote[m.chat][1].map((v, i) => `╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
-└────
+╚════
 
-┌〔 DEVOTE 〕
+╔❮✮ DEVOTE ✮❯
 │ 
-┃╠ Total: ${vote[m.chat][2].length}
-${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╠ Total: ${vote[m.chat][2].length}
+${vote[m.chat][2].map((v, i) => `╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
-└────
+╚════
 
 *${prefix}delvote* - To Delete Vote Session`
             let buttonsUpvote = [
@@ -1573,23 +1573,23 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
             if (wasVote) return replay(`You've Voted`)
             vote[m.chat][2].push(m.sender)
             menvote = vote[m.chat][1].concat(vote[m.chat][2])
-            teks_vote = `*「 VOTE 」*
+            teks_vote = `*❮❮ VOTE ❯❯*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+╔❮✮ UPVOTE ✮❯
 │ 
-┃╠ Total: ${vote[m.chat][1].length}
-${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╠ Total: ${vote[m.chat][1].length}
+${vote[m.chat][1].map((v, i) => `╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
-└────
+╚════
 
-┌〔 DEVOTE 〕
+╔❮✮ DEVOTE ✮❯
 │ 
-┃╠ Total: ${vote[m.chat][2].length}
-${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╠ Total: ${vote[m.chat][2].length}
+${vote[m.chat][2].map((v, i) => `╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
-└────
+╚════
 
 *${prefix}delvote* - To Delete Vote Session`
             let buttonsDevote = [
@@ -1611,23 +1611,23 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 case 'checkvote':
 if (!m.isGroup) return replay(`${mess.group}`)
 if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
-teks_vote = `*「 VOTE 」*
+teks_vote = `*❮❮ VOTE ❯❯*
 
 *Reason:* ${vote[m.chat][0]}
 
-┌〔 UPVOTE 〕
+╔❮✮ UPVOTE ✮❯
 │ 
-┃╠ Total: ${upvote.length}
-${vote[m.chat][1].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╠ Total: ${upvote.length}
+${vote[m.chat][1].map((v, i) => `╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
-└────
+╚════
 
-┌〔 DEVOTE 〕
+╔❮✮ DEVOTE ✮❯
 │ 
-┃╠ Total: ${devote.length}
-${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
+╠ Total: ${devote.length}
+${vote[m.chat][2].map((v, i) => `╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 │ 
-└────
+╚════
 
 *${prefix}delvote* - To Delete Vote Session
 
@@ -2081,8 +2081,8 @@ break
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '🎶Audio🎶'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -2681,8 +2681,8 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🥬With Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '❮❮🥬With Watermark🥬❯❯'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '❮❮🎵Audio🎵❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.nowatermark },
@@ -2699,8 +2699,8 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '🥬No Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '❮❮🥬No Watermark🥬❯❯'}, type: 1},
+                    {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.watermark },
@@ -2717,8 +2717,8 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/musically', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '🥬No Watermark🥬'}, type: 1},
-                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '🥬With Watermark🥬'}, type: 1}
+                    {buttonId: `tiktoknowm ${text}`, buttonText: {displayText: '❮❮🥬No Watermark🥬❯❯'}, type: 1},
+                    {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '❮❮🥬With Watermark🥬❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     text: `Download From ${text}`,
@@ -2772,7 +2772,7 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: '🎵Audio🎵'}, type: 1}
+                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.HD || anu.result.SD },
@@ -2789,7 +2789,7 @@ case 'webtonsearch': case 'webtoon':
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twitter ${text}`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                    {buttonId: `twitter ${text}`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
 		    image: { url: anu.result.thumb },
@@ -2822,8 +2822,8 @@ case 'webtonsearch': case 'webtoon':
 		let anu = await umma(isUrl(text)[0])
 		if (anu.type == 'video') {
 		    let buttons = [
-                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '🎵Audio🎵'}, type: 1},
-                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
                     ]
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
@@ -3060,7 +3060,7 @@ View List Of Messages With ${prefix}listmsg`)
                 if (m.isGroup) return reply('Features Cannot Be Used For Groups!')
 				this.anonymous = this.anonymous ? this.anonymous : {}
 				let buttons = [
-                    { buttonId: 'Start', buttonText: { displayText: '🚶Start🚶' }, type: 1 }
+                    { buttonId: 'Start', buttonText: { displayText: '🚙Start🚙' }, type: 1 }
                 ]
                 GojoMdNx.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await GojoMdNx.getName(m.sender)} Welcome To Anonymous Chat\n\nClick The Button Below To Find A Partner\`\`\``, GojoMdNx.user.name, m)
             }
@@ -3071,7 +3071,7 @@ View List Of Messages With ${prefix}listmsg`)
                 let room = Object.values(this.anonymous).find(room => room.check(m.sender))
                 if (!room) {
                     let buttons = [
-                        { buttonId: 'start', buttonText: { displayText: '🚶Start🚶' }, type: 1 }
+                        { buttonId: 'start', buttonText: { displayText: '🚙Start🚙' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, `\`\`\`You Are Not In An Anonymous Session, Press The Button To Find A Partner \`\`\``)
                    reply(false)
@@ -3129,7 +3129,7 @@ View List Of Messages With ${prefix}listmsg`)
                 let romeo = Object.values(this.anonymous).find(room => room.check(m.sender))
                 if (!romeo) {
                     let buttons = [
-                        { buttonId: 'start', buttonText: { displayText: '🚶Start🚶' }, type: 1 }
+                        { buttonId: 'start', buttonText: { displayText: '🚙Start🚙' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, `\`\`\`You Are Not In An Anonymous Session, Press The Button To Find A Partner\`\`\``)
                     reply(false)
@@ -3292,23 +3292,24 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
-                            hydratedFooterText: `┌─❖
+                            hydratedFooterText: `❯❯===(🤭❤️)===❮❮
 ╔●●●❖➾➾➾➾➾➾➾➾➾
-▌ ╠ Hi, I am Alive👋 ╣
-╚●●●❖╠ ${pushname} ╣
-╔╬⦁➾  Kumuthu Prabhasha😄
-▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀
-▌⦁➾ ❮ ELSA BOT INFO ❯
-▌❮✮❯ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-▌❮✮❯ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-▌❮✮❯ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-▌❮✮❯ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-▌❮✮❯ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-▌❮✮❯ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-▌❮✮❯ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-▌❮✮❯ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-▙╗⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀
-   ╚➾✑  Select The Button Below ❮●●
+▌ ╠ Hi, ${pushname} ╣
+╚●●●❖╠ I am Alive👋 ╣
+
+✺➾ ║😁𝗞𝘂𝗺𝘂𝘁𝗵𝘂 𝗣𝗿𝗮𝗯𝗵𝗮𝘀𝗵𝗮🌚║
+▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀
+▌⦁➾ ❮ ELSA BOT PROPERTIES ❯
+▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 : ${global.botname}
+▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 : ${global.ownername}
+▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 : ${global.owner}
+▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds
+▌❮✮❯ 𝙍𝙪𝙣𝙩𝙞𝙢𝙚 : ${runtime(process.uptime())}
+▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}
+▌❮✮❯ 𝙏𝙤𝙩𝙖𝙡 𝙐𝙨𝙚𝙧 : ${Object.keys(global.db.data.users).length}
+▌❮✮❯ 𝙃𝙤𝙨𝙩 𝙉𝙖𝙢𝙚 : ${os.hostname()}
+▌╗⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀
+   ╚➾  Select The Button Below ❮●●
    ❯❯●●●●●●●●●●●●●●●●●●●●❮❮`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3353,23 +3354,24 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')}, 
                             hydratedFooterText: `
-┌─❖
-│「 Hi 👋 」
-└┬❖ 「 ${pushname} 」
-┌┤✑  Daijobka sempai?😄
-│└───────────────┈ ⳹
-│ 「 BOT INFO 」
-│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-└┬──────────────┈ ⳹
-   │✑  Please Select The Button Below
-   └───────────────┈ ⳹`,
+╔●●●❖➾➾➾➾➾➾➾➾➾
+▌ ╠ Hi, ${pushname} ╣
+╚●●●❖╠ I am Alive👋 ╣
+
+✺➾ ║😁𝗞𝘂𝗺𝘂𝘁𝗵𝘂 𝗣𝗿𝗮𝗯𝗵𝗮𝘀𝗵𝗮🌚║
+▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀
+▌⦁➾ ❮ ELSA BOT PROPERTIES ❯
+▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 : ${global.botname}
+▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 : ${global.ownername}
+▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 : ${global.owner}
+▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds
+▌❮✮❯ 𝙍𝙪𝙣𝙩𝙞𝙢𝙚 : ${runtime(process.uptime())}
+▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}
+▌❮✮❯ 𝙏𝙤𝙩𝙖𝙡 𝙐𝙨𝙚𝙧 : ${Object.keys(global.db.data.users).length}
+▌❮✮❯ 𝙃𝙤𝙨𝙩 𝙉𝙖𝙢𝙚 : ${os.hostname()}
+▌╗⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀
+   ╚➾  Select The Button Below ❮●●
+   ❯❯●●●●●●●●●●●●●●●●●●●●❮❮`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '📱YouTube📍',
@@ -3537,7 +3539,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
 case 'allmenu': {
   	anu = `
-┏━❯ *${botname}* ❮━━😎 
+┏━❯ *${botname}* ❮━😎 
 ┃╔══☯︎❯ MAIN ❮☯︎
 ┃╠✹ ${prefix}alive
 ┃╠✹ ${prefix}script
